@@ -1,4 +1,0 @@
-[build]
-  base    = "users-search"
-  publish = "users-search/build"
-  command = "npm run build"
