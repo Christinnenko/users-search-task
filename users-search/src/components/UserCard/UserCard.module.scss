@@ -1,0 +1,66 @@
+.user {
+  width: 357px;
+  height: 314px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  font-size: 14px;
+  color: #8189a3;
+  cursor: pointer;
+  flex-grow: 1;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__name {
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 24px;
+    color: #262c40;
+    padding-bottom: 12px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__phone_img {
+    width: 24px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+// @media (max-width: 400px) {
+//   .user {
+//     width: 100%;
+//   }
+// }
+// @media (min-width: 400px) and (max-width: 700px) {
+//   .user {
+//     width: calc(100% / 2 - 1.5% * 1 / 2);
+//   }
+//   .user:not(:nth-child(2n)) {
+//     margin-right: 1.5%;
+//   }
+// }
+// @media (min-width: 700px) and (max-width: 1000px) {
+//   .user {
+//     width: calc(100% / 3 - 1.5% * 2 / 3);
+//   }
+//   .user:not(:nth-child(3n)) {
+//     margin-right: 1.5%;
+//   }
+// }
+// @media (min-width: 1000px) {
+//   .user {
+//     width: calc(100% / 4 - 1.5% * 3 / 4);
+//   }
+//   .user:not(:nth-child(4n)) {
+//     margin-right: 1.5%;
+//   }
+// }
