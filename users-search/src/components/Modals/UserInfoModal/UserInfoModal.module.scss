@@ -63,6 +63,8 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    max-height: calc(100% - 48px);
+    overflow-y: auto;
   }
 
   &__additionalInfoTitle {
@@ -71,5 +73,6 @@
 
   &__additionalInfoText {
     color: #8189a3;
+    overflow-y: auto;
   }
 }

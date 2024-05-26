@@ -1,5 +1,3 @@
-// UsersSearchPage.jsx
-
 import React, { useState, useEffect } from 'react'
 import styles from './UsersSearchPage.module.scss'
 import { UserCard } from '../../components/UserCard/UserCard.jsx'
@@ -40,6 +38,14 @@ export const UsersSearchPage = () => {
     fetchUsers(searchTerm)
   }, [searchTerm])
 
+  if (loading) {
+    return <div className={styles.users__massage}>Загрузка...</div>
+  }
+
+  if (error) {
+    return <div className={styles.users__massage}>{error}</div>
+  }
+
   const openModal = (user) => {
     setSelectedUser(user)
     setIsModalOpen(true)
@@ -47,14 +53,6 @@ export const UsersSearchPage = () => {
 
   const closeModal = () => {
     setIsModalOpen(false)
-  }
-
-  if (loading) {
-    return <div className={styles.users__massage}>Загрузка...</div>
-  }
-
-  if (error) {
-    return <div className={styles.users__massage}>{error}</div>
   }
 
   return (
