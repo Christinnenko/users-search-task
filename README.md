@@ -2,7 +2,7 @@
 
 ## Отображение списка пользователей с возможностью поиска и просмотра информации о выбранном пользователе
 
-![image](![image](https://github.com/Christinnenko/users-search-task/assets/135636897/9a8089b8-38c2-4901-b0d1-bfdab746e87d))
+![image](![image](https://github.com/Christinnenko/users-search-task/assets/135636897/5a844933-6511-4dcd-80d8-759499027fea))
 
 ## Технологии:
 
